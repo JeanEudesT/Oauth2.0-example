@@ -1,0 +1,8 @@
+<body>
+  <h1>Welcome to my website</h1>
+  <button (click)="this.componentToShow = 'login'">Login</button>
+
+  <app-login-form *ngIf="componentToShow == 'login'"></app-login-form>
+  <app-private-content *ngIf="componentToShow == 'private'"></app-private-content>
+  <app-public-content *ngIf="componentToShow == 'public'"></app-public-content>
+</body>
